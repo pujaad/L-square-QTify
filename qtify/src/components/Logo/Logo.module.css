@@ -1,6 +1,5 @@
-.logoCenter{
-    display: flex;
-   padding-top: 20px;
-   padding-bottom: 5px;
-   padding-left: 5px;
+.logoCenter {
+    display:flex;
+    padding-left:10px;
+    
 }

@@ -1,0 +1,16 @@
+.hero {
+    text-align: center; 
+    padding: 20px;
+    justify-content: space-around;
+    margin: 20px auto;
+   background-color: black;
+   color:aliceblue;
+}
+
+.text {
+    margin-bottom: 5px; 
+}
+.hero img {
+    height:100px;
+
+}

@@ -1,10 +1,17 @@
-.search{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+.inputSearch{
+    width:300px;
+   height:30px;
+
+   border-radius: 10px;
+    
     
 }
-.inputSearch{
-    width:400px;
-    height:30px;
+.searchBar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  margin-left: 200px;
+ 
+   
 }

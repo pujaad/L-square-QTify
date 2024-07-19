@@ -1,10 +1,11 @@
 import styles from  "./Searchbar.module.css" ;
 
-const Search=()=>{
+const Search=({searchText})=>{
     return(
-        <div className={styles.search}>
-        <input className={styles.inputSearch} type="text" placeholder="search"></input>
+        <div className={styles.searchBar}>
+        <input className={styles.inputSearch} type="text" placeholder={searchText}></input>
         </div>
+       
         
     )
 }

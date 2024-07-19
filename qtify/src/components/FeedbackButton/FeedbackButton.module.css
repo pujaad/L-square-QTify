@@ -4,10 +4,11 @@
     font-family: "Poppins",sans-serif;
     border-radius: 8px;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 16px;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+    margin-left:auto ;
 }
 .button{
     display: flex;
