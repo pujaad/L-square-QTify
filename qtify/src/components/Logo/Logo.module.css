@@ -1,5 +1,8 @@
 .logoCenter {
-    display:flex;
-    padding-left:10px;
-    
+    width: 67px;
+    height: 34px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    gap: 0px;
+    opacity: 0px;
 }

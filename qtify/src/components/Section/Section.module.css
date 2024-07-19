@@ -1,0 +1,18 @@
+.imgGrid{
+ display: grid;
+ grid-template-columns: repeat(6, 1fr);
+ gap:10px;
+}
+.btn{
+    display: flex;
+    justify-content: space-between;
+}
+.alignbtn{
+    font-family: "Poppins", sans-serif;
+Width:600;
+
+Size:40px;
+
+ height:30px;
+
+}
