@@ -3,7 +3,7 @@ import {Box,Typography,Button} from '@mui/material';
 import axios from "axios";
 import AlbumCard from "../Card/Card";
 import styles from "./Section.module.css";
-import { green } from "@mui/material/colors";
+
 
 const SectionComponent=()=>{
  const [albums,setAlbums]=useState([])
