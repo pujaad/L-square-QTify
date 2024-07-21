@@ -56,7 +56,7 @@ const SectionComponent = () => {
     }, [])
 
     return (
-        <>
+        <div className={styles.background}>
             <Container
                 items={albums}
                 collapse={false}
@@ -70,7 +70,7 @@ const SectionComponent = () => {
             />
 
             <Tabs genres={genres} songs={songs} title="Songs"/>
-        </>
+        </div>
     );
 }
 
