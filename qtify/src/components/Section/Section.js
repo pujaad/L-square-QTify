@@ -59,7 +59,7 @@ const SectionComponent = () => {
         <div className={styles.background}>
             <Container
                 items={albums}
-                collapse={false}
+                collapse={true}
                 title="Top Albums"
             />
 
