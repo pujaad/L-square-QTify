@@ -5,12 +5,13 @@
     margin: 20px auto;
    background-color: black;
    color:aliceblue;
+   height:200px;
 }
 
 .text {
     margin-bottom: 5px; 
 }
 .hero img {
-    height:100px;
+    height:80px;
 
 }
