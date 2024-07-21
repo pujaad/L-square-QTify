@@ -1,10 +1,10 @@
-.imgGrid{
+.imgGrid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    gap:10px;
-   }
-   .btn{
-       display: flex;
-       justify-content: space-between;
-   }
-   
+    gap: 10px;
+}
+
+.btn {
+    display: flex;
+    justify-content: space-between;
+}

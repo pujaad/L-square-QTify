@@ -4,11 +4,12 @@ import axios from "axios";
 import AlbumCard from "../Card/Card";
 import styles from "./Section.module.css";
 import Container from "../Container/Container";
-
+import Tabs from "../Tabs/Tabs";
 const SectionComponent = () => {
     const [albums, setAlbums] = useState([])
-    const [newAlbums,setNewAlbums]= useState([])
-
+    const [newAlbums, setNewAlbums] = useState([])
+    const [songs, setSongs] = useState([])
+    const [genres, setGenres] = useState([])
     const getTopAlbumsApi = async () => {
         try {
             const response = await axios.get("https://qtify-backend-labs.crio.do/albums/top")
@@ -17,7 +18,6 @@ const SectionComponent = () => {
             console.log(err)
         }
     }
-    
 
     const getNewAlbumsApi = async () => {
         try {
@@ -27,28 +27,49 @@ const SectionComponent = () => {
             console.log(err)
         }
     }
-    
+
+    const getSongsApi = async () => {
+        try {
+            const response = await axios.get("https://qtify-backend-labs.crio.do/songs")
+            setSongs(response.data)
+        } catch (err) {
+            console.log(err)
+        }
+    }
+
+    const getGenresApi = async () => {
+        try {
+            const response = await axios.get("https://qtify-backend-labs.crio.do/genres")
+            setGenres(response.data.data)
+        } catch (err) {
+            console.log(err)
+        }
+    }
+
+
 
     useEffect(() => {
         getNewAlbumsApi()
         getTopAlbumsApi()
+        getSongsApi()
+        getGenresApi()
     }, [])
 
     return (
         <>
             <Container
-            items={albums}
-             collapse={false}
-             title="Top Albums"
-             />
+                items={albums}
+                collapse={false}
+                title="Top Albums"
+            />
 
             <Container
-            items={newAlbums}
-             collapse={true}
-             title="New Albums"
-             />
-              
-        
+                items={newAlbums}
+                collapse={true}
+                title="New Albums"
+            />
+
+            <Tabs genres={genres} songs={songs} title="Songs"/>
         </>
     );
 }
